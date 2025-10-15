@@ -111,6 +111,7 @@ function startTest(){
 }
 
 // Show one question
+// Show one question
 function showQuestion(){
   if(currentIndex >= quiz.length){
     const container = document.getElementById('questionCard');
@@ -149,7 +150,10 @@ function showQuestion(){
   const optionsContainer = document.getElementById('optionsContainer');
   optionsContainer.innerHTML = '';
 
-  q.options.forEach(opt=>{
+  // Shuffle options
+  const shuffledOptions = [...q.options].sort(()=>Math.random()-0.5);
+
+  shuffledOptions.forEach(opt=>{
     const btn = document.createElement('button');
     btn.innerText = opt;
     btn.onclick = () => checkAnswer(opt, btn);
