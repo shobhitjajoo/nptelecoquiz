@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MCQ Quiz</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',sans-serif; }
+  body { background: linear-gradient(135deg,#6a11cb,#2575fc); min-height:100vh; display:flex; justify-content:center; align-items:center; color:#333; }
+  .container { background:#fff; padding:30px; border-radius:20px; width:90%; max-width:600px; box-shadow:0 10px 30px rgba(0,0,0,0.2); animation:fadeIn 0.5s ease; }
+  h1 { text-align:center; margin-bottom:20px; color:#444; }
+  button, select { padding:10px 15px; border-radius:12px; border:none; margin-bottom:15px; font-size:14px; }
+  button { background:#2575fc; color:#fff; cursor:pointer; transition:0.3s; }
+  button:hover { background:#6a11cb; }
+  .question-card { background:#f9f9f9; padding:20px; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.1); margin-bottom:15px; animation:fadeIn 0.3s ease; }
+  .options button { display:block; width:100%; margin:8px 0; background:#fff; border:1px solid #ccc; text-align:left; transition:0.3s; color:#333; }
+  .options button:hover { background:#e0e0e0; }
+  .correct { background:#4caf50 !important; color:#fff; }
+  .wrong { background:#f44336 !important; color:#fff; }
+  .score { font-size:18px; text-align:center; margin-top:15px; color:#444; }
+  @keyframes fadeIn { from {opacity:0; transform:translateY(-10px);} to {opacity:1; transform:translateY(0);} }
+</style>
+</head>
+<body>
+
+<div class="container" id="app">
+  <h1>MCQ Quiz</h1>
+
+  <!-- Select Test -->
+  <div id="select-section">
+    <h3>Select Test</h3>
+    <select id="testSelect">
+      <option value="">-- Select Test --</option>
+      <option value="week1">Week 1</option>
+      <option value="week2">Week 2</option>
+      <option value="week3">Week 3</option>
+      <option value="week4">Week 4</option>
+      <option value="week5">Week 5</option>
+      <option value="week6">Week 6</option>
+      <option value="week7">Week 7</option>
+      <option value="week8">Week 8</option>
+      <option value="week9">Week 9</option>
+      <option value="week10">Week 10</option>
+      <option value="week11">Week 11</option>
+      <option value="week12">Week 12</option>
+      <option value="all">All</option>
+    </select>
+    <button onclick="startTest()">Start Test</button>
+  </div>
+
+  <!-- Quiz Section -->
+  <div id="quiz-section" style="display:none;">
+    <div class="question-card" id="questionCard">
+      <div id="questionText"></div>
+      <div class="options" id="optionsContainer"></div>
+    </div>
+    <div class="score" id="scoreDisplay"></div>
+  </div>
+</div>
+
+<script>
+let allTests = {};
+let quiz = [];
+let currentIndex = 0;
+let score = 0;
+
+// Load questions from JSON
+async function loadQuestions(){
+  try {
+    const res = await fetch('ecology_questions.json');
+    const data = await res.json();
+    allTests = {};
+    for(let i=1;i<=12;i++){
+      allTests['week'+i] = data.ecology_questions.filter(q=>q.week===i);
+    }
+  } catch(err){
+    console.error("Failed to load questions:", err);
+    alert("Failed to load questions. Make sure ecology_questions.json is present.");
+  }
+}
+
+// Call this when page loads
+loadQuestions();
+
+// Start Test
+function startTest(){
+  const selected = document.getElementById('testSelect').value;
+  if(!selected){ alert('Please select a test'); return; }
+
+  if(selected === "all"){
+    quiz = [];
+    Object.values(allTests).forEach(arr=>quiz.push(...arr));
+  } else {
+    quiz = [...allTests[selected]];
+  }
+
+  if(quiz.length === 0){ alert('No questions available for this test'); return; }
+
+  // Shuffle questions
+  quiz.sort(()=>Math.random()-0.5);
+
+  currentIndex = 0;
+  score = 0;
+  document.getElementById('select-section').style.display='none';
+  document.getElementById('quiz-section').style.display='block';
+  showQuestion();
+}
+
+// Show one question
+function showQuestion(){
+  if(currentIndex >= quiz.length){
+    document.getElementById('questionCard').innerHTML = '<h3>Test Completed!</h3>';
+    document.getElementById('scoreDisplay').innerText = `Your Score: ${score} / ${quiz.length}`;
+    return;
+  }
+
+  const q = quiz[currentIndex];
+  document.getElementById('questionText').innerHTML = `<h3>Q${currentIndex+1}: ${q.question}</h3>`;
+  const optionsContainer = document.getElementById('optionsContainer');
+  optionsContainer.innerHTML = '';
+
+  q.options.forEach(opt=>{
+    const btn = document.createElement('button');
+    btn.innerText = opt;
+    btn.onclick = () => checkAnswer(opt, btn);
+    optionsContainer.appendChild(btn);
+  });
+}
+
+// Check answer
+function checkAnswer(selected, btn){
+  const q = quiz[currentIndex];
+  if(selected.trim().toLowerCase() === q.answer.trim().toLowerCase()){
+    btn.classList.add('correct');
+    score++;
+  } else {
+    btn.classList.add('wrong');
+    [...document.getElementById('optionsContainer').children].forEach(b=>{
+      if(b.innerText.trim().toLowerCase() === q.answer.trim().toLowerCase()) b.classList.add('correct');
+    });
+  }
+
+  [...document.getElementById('optionsContainer').children].forEach(b=>b.disabled=true);
+
+  setTimeout(()=>{
+    currentIndex++;
+    showQuestion();
+  },1500);
+}
+</script>
+
+</body>
+</html>
