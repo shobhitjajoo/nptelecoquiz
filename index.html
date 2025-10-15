@@ -18,6 +18,10 @@
   .correct { background:#4caf50 !important; color:#fff; }
   .wrong { background:#f44336 !important; color:#fff; }
   .score { font-size:18px; text-align:center; margin-top:15px; color:#444; }
+  .wrong-list { margin-top:20px; }
+  .wrong-item { margin-bottom:15px; padding:10px; background:#f8d7da; border-radius:10px; }
+  .wrong-item h4 { margin-bottom:5px; color:#721c24; }
+  .wrong-item p { margin:0; color:#333; }
   @keyframes fadeIn { from {opacity:0; transform:translateY(-10px);} to {opacity:1; transform:translateY(0);} }
 </style>
 </head>
@@ -63,6 +67,7 @@ let allTests = {};
 let quiz = [];
 let currentIndex = 0;
 let score = 0;
+let wrongAnswers = [];
 
 // Load questions from JSON
 async function loadQuestions(){
@@ -89,7 +94,15 @@ function startTest(){
 
   if(selected === "all"){
     quiz = [];
-    Object.values(allTests).forEach(arr=>quiz.push(...arr));
+    Object.values(allTests).forEach(arr => quiz.push(...arr));
+
+    // Remove duplicate questions
+    const seen = new Set();
+    quiz = quiz.filter(q => {
+      if(seen.has(q.question)) return false;
+      seen.add(q.question);
+      return true;
+    });
   } else {
     quiz = [...allTests[selected]];
   }
@@ -101,6 +114,7 @@ function startTest(){
 
   currentIndex = 0;
   score = 0;
+  wrongAnswers = [];
   document.getElementById('select-section').style.display='none';
   document.getElementById('quiz-section').style.display='block';
   showQuestion();
@@ -109,8 +123,7 @@ function startTest(){
 // Show one question
 function showQuestion(){
   if(currentIndex >= quiz.length){
-    document.getElementById('questionCard').innerHTML = '<h3>Test Completed!</h3>';
-    document.getElementById('scoreDisplay').innerText = `Your Score: ${score} / ${quiz.length}`;
+    showResults();
     return;
   }
 
@@ -135,6 +148,7 @@ function checkAnswer(selected, btn){
     score++;
   } else {
     btn.classList.add('wrong');
+    wrongAnswers.push(q);
     [...document.getElementById('optionsContainer').children].forEach(b=>{
       if(b.innerText.trim().toLowerCase() === q.answer.trim().toLowerCase()) b.classList.add('correct');
     });
@@ -146,6 +160,36 @@ function checkAnswer(selected, btn){
     currentIndex++;
     showQuestion();
   },1500);
+}
+
+// Show results and wrong answers
+function showResults(){
+  const container = document.getElementById('questionCard');
+  container.innerHTML = `<h3>Test Completed!</h3>
+                         <div class="score">Your Score: ${score} / ${quiz.length}</div>`;
+
+  if(wrongAnswers.length > 0){
+    const wrongDiv = document.createElement('div');
+    wrongDiv.classList.add('wrong-list');
+    wrongDiv.innerHTML = `<h3>Wrong Answers:</h3>`;
+    wrongAnswers.forEach((q,i)=>{
+      const item = document.createElement('div');
+      item.classList.add('wrong-item');
+      item.innerHTML = `<h4>Q${i+1}: ${q.question}</h4>
+                        <p>Correct Answer: ${q.answer}</p>`;
+      wrongDiv.appendChild(item);
+    });
+    container.appendChild(wrongDiv);
+  }
+
+  const homeBtn = document.createElement('button');
+  homeBtn.innerText = "Go to Home Page";
+  homeBtn.onclick = () => {
+    document.getElementById('select-section').style.display='block';
+    document.getElementById('quiz-section').style.display='none';
+    container.innerHTML = '';
+  };
+  container.appendChild(homeBtn);
 }
 </script>
 
