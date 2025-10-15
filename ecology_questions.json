@@ -501,234 +501,259 @@
     },
     {
       "week": 9,
-      "question": "Which is correct? a. b. c. d.",
-      "options": ["Redundant species are more tolerant of environmental changes", "Redundant species are less tolerant", "Redundant species are equally tolerant", "None of these"],
-      "answer": "Redundant species are more tolerant of environmental changes"
+      "question": "Which of these is a positive check according to Malthus?",
+      "options": ["late marriage", "war", "celibacy", "moral restraint"],
+      "answer": "war"
     },
     {
       "week": 9,
-      "question": "Endangered species refer to species whose population has decreased to such an extent that they are",
-      "options": ["in danger of extinction", "rare", "keystone species", "umbrella species"],
-      "answer": "in danger of extinction"
+      "question": "________ determines which projects or developments require a full or partial impact assessment study.",
+      "options": ["screening", "scoping", "reporting", "review"],
+      "answer": "screening"
     },
     {
       "week": 9,
-      "question": "Which of these are correctly grouped as flagship species?",
-      "options": ["tiger, rhino, elephant, lion", "cockroach, rat, pigeon, crow", "frog, butterfly, mosquito, fish", "microbes, algae, plankton, moss"],
-      "answer": "tiger, rhino, elephant, lion"
+      "question": "Which of these is a pillar of sustainability",
+      "options": ["social sustainability", "industrial sustainability", "agricultural sustainability", "trans-boundary sustainability"],
+      "answer": "social sustainability"
     },
     {
       "week": 9,
-      "question": "Which of these are correctly grouped as keystone species?",
-      "options": ["beaver, honeybee, fig tree, sea otter", "tiger, rhino, elephant, lion", "cockroach, rat, pigeon, crow", "frog, butterfly, mosquito, fish"],
-      "answer": "beaver, honeybee, fig tree, sea otter"
+      "question": "Which of these is not a pillar of sustainability?",
+      "options": ["environmental sustainability", "economic sustainability", "trans-boundary sustainability", "social sustainability"],
+      "answer": "trans-boundary sustainability"
     },
     {
       "week": 9,
-      "question": "Which of these are correctly grouped as indicator species?",
-      "options": ["lichens, frog, mayfly", "tiger, rhino, elephant", "cockroach, rat, pigeon, crow", "microbes, algae, plankton, moss"],
-      "answer": "lichens, frog, mayfly"
+      "question": "The book \"An Essay on the Principle of Population\" was written by",
+      "options": ["Darwin", "Malthus", "Spencer", "Owens"],
+      "answer": "Malthus"
     },
     {
       "week": 9,
-      "question": "Which of these are correctly grouped as umbrella species?",
-      "options": ["tiger, elephant, rhinoceros", "lichens, frog, mayfly", "beaver, honeybee, fig tree, sea otter", "cockroach, rat, pigeon, crow"],
-      "answer": "tiger, elephant, rhinoceros"
+      "question": "According to Malthusian model,",
+      "options": [
+        "Population grows in geometric progression, food supply increases in arithmetic progression",
+        "Population grows in geometric progression, food supply increases in geometric progression",
+        "Population grows in arithmetic progression, food supply increases in arithmetic progression",
+        "Population grows in arithmetic progression, food supply increases in geometric progression"
+      ],
+      "answer": "Population grows in geometric progression, food supply increases in arithmetic progression"
     },
     {
       "week": 9,
-      "question": "Which of these are correctly grouped as invasive alien species?",
-      "options": ["Lantana, Parthenium, Water hyacinth, Prosopis juliflora", "Tiger, lion, elephant, rhino", "Frog, mayfly, lichen", "Bee, fig tree, sea otter"],
-      "answer": "Lantana, Parthenium, Water hyacinth, Prosopis juliflora"
+      "question": "The quantum of human impacts is given by",
+      "options": ["I = P × A × T", "I = P + A + T", "I = P + A - T", "I = P - (A + T)"],
+      "answer": "I = P × A × T"
     },
     {
       "week": 9,
-      "question": "Which of these is the correct definition of extinct species?",
-      "options": ["Species that no longer exist", "Species that are in danger of extinction", "Species with declining population", "Species with stable population"],
-      "answer": "Species that no longer exist"
+      "question": "____________is used to identify which potential impacts are relevant to assess.",
+      "options": ["screening", "scoping", "reporting", "review"],
+      "answer": "scoping"
+    },
+    {
+      "week": 9,
+      "question": "The demographic transition sees a society move from",
+      "options": [
+        "high birth rate, low death rate to low birth rate, low death rate",
+        "low birth rate, high death rate to low birth rate, low death rate",
+        "high birth rate, high death rate to low birth rate, low death rate",
+        "high birth rate, high death rate to low birth rate, high death rate"
+      ],
+      "answer": "high birth rate, high death rate to low birth rate, low death rate"
+    },
+    {
+      "week": 9,
+      "question": "Which of these is a preventive check according to Malthus?",
+      "options": ["foresight", "vice", "misery", "flood"],
+      "answer": "foresight"
     },
     {
       "week": 10,
-      "question": "Which of these is a density-dependent factor controlling population size?",
-      "options": ["disease", "flood", "fire", "earthquake"],
-      "answer": "disease"
+      "question": "Which of these is not a climatic forcing for Earth?",
+      "options": ["changes in plate tectonics", "changes in Earth's orbit", "changes in Sun's orbit", "changes in Sun's strength"],
+      "answer": "changes in Sun's orbit"
     },
     {
       "week": 10,
-      "question": "Which of these is a density-independent factor controlling population size?",
-      "options": ["competition", "predation", "flood", "disease"],
-      "answer": "flood"
+      "question": "“The ability of a system to adjust to climate change (including climate variability and extremes) to moderate potential damages, to take advantage of opportunities, or to cope with the consequences” is a definition for",
+      "options": ["adaptive response", "adaptive capacity", "mitigative response", "mitigative capacity"],
+      "answer": "adaptive capacity"
     },
     {
       "week": 10,
-      "question": "The maximum population size that an environment can support indefinitely is called",
-      "options": ["carrying capacity", "biotic potential", "limiting factor", "natality rate"],
-      "answer": "carrying capacity"
+      "question": "Which of these is not a principle of ecological restoration?",
+      "options": ["ecological integrity", "short-term sustainability", "benefits and engages society", "informed by past and future"],
+      "answer": "short-term sustainability"
     },
     {
       "week": 10,
-      "question": "r-strategists are characterized by",
-      "options": ["high reproduction rate, low parental care", "low reproduction rate, high parental care", "high reproduction rate, high parental care", "low reproduction rate, low parental care"],
-      "answer": "high reproduction rate, low parental care"
+      "question": "Mesodebris in the context of plastic debris has fragments of size",
+      "options": ["> 20 mm", "5 - 20 mm", "< 5 mm", "< 1 mm"],
+      "answer": "5 - 20 mm"
     },
     {
       "week": 10,
-      "question": "K-strategists are characterized by",
-      "options": ["low reproduction rate, high parental care", "high reproduction rate, low parental care", "high reproduction rate, high parental care", "low reproduction rate, low parental care"],
-      "answer": "low reproduction rate, high parental care"
+      "question": "“Any changes in natural or human systems that inadvertently increase vulnerability to climatic stimuli; an adaptation that does not succeed in reducing vulnerability but increases it instead” is a definition for",
+      "options": ["adaptation", "mitigation", "maladaptation", "malmitigation"],
+      "answer": "maladaptation"
     },
     {
       "week": 10,
-      "question": "Which of these is not an r-strategist?",
-      "options": ["mouse", "cockroach", "elephant", "frog"],
-      "answer": "elephant"
+      "question": "Which of these is not a principle of ecological restoration?",
+      "options": ["ecological integrity", "long-term sustainability", "benefits and engages scientists", "informed by past and future"],
+      "answer": "benefits and engages scientists"
     },
     {
       "week": 10,
-      "question": "Which of these is not a K-strategist?",
-      "options": ["tiger", "elephant", "whale", "frog"],
-      "answer": "frog"
+      "question": "Which of these is not a climatic forcing for Earth?",
+      "options": ["changes in plate tectonics", "changes in Earth's orbit", "changes in Moon's orbit", "changes in Sun's strength"],
+      "answer": "changes in Moon's orbit"
     },
     {
       "week": 10,
-      "question": "Type I survivorship curve is typically seen in",
-      "options": ["humans, large mammals", "insects, small fish", "frogs, rodents", "annual plants"],
-      "answer": "humans, large mammals"
+      "question": "Because of climate change, Mudumalai Tiger Reserve is suffering from frequent droughts. The management has built several artificial water holes for animals, and fills them up regularly with tankers. In the context of climate change, such an action would be called",
+      "options": ["adaptation", "mitigation", "deceleration", "maladaptation"],
+      "answer": "adaptation"
     },
     {
       "week": 10,
-      "question": "Type II survivorship curve is typically seen in",
-      "options": ["birds, lizards", "humans", "insects", "plants"],
-      "answer": "birds, lizards"
+      "question": "Macrodebris in the context of plastic debris has fragments of size",
+      "options": ["> 20 mm", "5 - 20 mm", "< 5 mm", "< 1 mm"],
+      "answer": "> 20 mm"
     },
     {
       "week": 10,
-      "question": "Type III survivorship curve is typically seen in",
-      "options": ["insects, small fish", "humans, elephants", "birds", "lizards"],
-      "answer": "insects, small fish"
+      "question": "The government came up with a regulation that incandescent bulbs be replaced by LED bulbs, so that electricity consumption and release of carbon dioxide from power plants is reduced. In the context of climate change, such an action would be called",
+      "options": ["adaptation", "mitigation", "deceleration", "maladaptation"],
+      "answer": "mitigation"
     },
     {
       "week": 11,
-      "question": "Which of these is an example of primary productivity?",
-      "options": ["Photosynthesis by plants", "Decomposition by bacteria", "Respiration by animals", "Erosion of soil"],
-      "answer": "Photosynthesis by plants"
+      "question": "Ludwig's ratchet predicts",
+      "options": ["decreasing harvesting rate", "constant harvesting rate", "increasing harvesting rate", "fluctuating harvesting rate"],
+      "answer": "increasing harvesting rate"
     },
     {
       "week": 11,
-      "question": "Gross primary productivity (GPP) minus respiration of producers gives",
-      "options": ["Net primary productivity (NPP)", "Secondary productivity", "Decomposition rate", "Biomass loss"],
-      "answer": "Net primary productivity (NPP)"
+      "question": "A pest population is called controlled when",
+      "options": ["it is not increasing", "it is decreasing", "it is not causing any economic damage", "it is not causing excessive economic damage"],
+      "answer": "it is not causing excessive economic damage"
     },
     {
       "week": 11,
-      "question": "Which ecosystem has the highest net primary productivity per unit area?",
-      "options": ["Tropical rainforest", "Desert", "Open ocean", "Tundra"],
-      "answer": "Tropical rainforest"
+      "question": "Which of these is not an impact of toxic chemicals?",
+      "options": ["lethal effects", "sub-lethal effects", "reduction of existing stressors", "reduced fecundity"],
+      "answer": "reduction of existing stressors"
     },
     {
       "week": 11,
-      "question": "Which ecosystem contributes most to global primary productivity overall?",
-      "options": ["Open ocean", "Tropical rainforest", "Grassland", "Coral reefs"],
-      "answer": "Open ocean"
+      "question": "Which of these is correct?",
+      "options": ["The maximum sustainable yield is near the beginning of the sigmoidal curve.", "The maximum sustainable yield is near the mid-point of the sigmoidal curve.", "The maximum sustainable yield is near the end of the sigmoidal curve.", "None of these"],
+      "answer": "The maximum sustainable yield is near the mid-point of the sigmoidal curve."
     },
     {
       "week": 11,
-      "question": "Secondary productivity is the rate at which",
-      "options": ["consumers convert the energy from food into biomass", "producers convert sunlight into biomass", "decomposers recycle nutrients", "ecosystem loses energy as heat"],
-      "answer": "consumers convert the energy from food into biomass"
+      "question": "A root zone treatment plant is an example of",
+      "options": ["phytoremediation", "biological control", "biomagnification", "bioaccumulation"],
+      "answer": "phytoremediation"
     },
     {
       "week": 11,
-      "question": "Which of these is a detritivore?",
-      "options": ["Earthworm", "Lion", "Eagle", "Algae"],
-      "answer": "Earthworm"
+      "question": "A pest population is called uncontrolled when",
+      "options": ["it is increasing", "it is not decreasing", "it is causing some economic damage", "it is causing excessive economic damage"],
+      "answer": "it is causing excessive economic damage"
     },
     {
       "week": 11,
-      "question": "Biogeochemical cycles do not include",
-      "options": ["carbon", "nitrogen", "phosphorus", "temperature"],
-      "answer": "temperature"
+      "question": "The impact of El Nino on fishery collapse in Peru is explained by",
+      "options": ["match hypothesis", "mismatch hypothesis", "match-mismatch hypothesis", "none of these"],
+      "answer": "match-mismatch hypothesis"
     },
     {
       "week": 11,
-      "question": "Which of these cycles is primarily gaseous in nature?",
-      "options": ["Carbon and nitrogen", "Phosphorus and sulfur", "Calcium and iron", "Silicon and potassium"],
-      "answer": "Carbon and nitrogen"
+      "question": "A deciduous forest in Madhya Pradesh was converted to a mine. After the mining operations were over, the pits were filled up with soil and species of deciduous forest planted again. This is an example of",
+      "options": ["recovery", "restoration", "enhancement"],
+      "answer": "restoration"
     },
     {
       "week": 11,
-      "question": "Which of these cycles is primarily sedimentary in nature?",
-      "options": ["Phosphorus and sulfur", "Carbon and nitrogen", "Oxygen and hydrogen", "Potassium and magnesium"],
-      "answer": "Phosphorus and sulfur"
+      "question": "A deciduous forest in Madhya Pradesh was converted to a mine. After the mining operations were over, the pits were filled up with water and a lake was created. It is now visited by several migratory birds. This is an example of",
+      "options": ["recovery", "restoration", "enhancement", "replacement"],
+      "answer": "replacement"
     },
     {
       "week": 11,
-      "question": "Which of these is a major sink for atmospheric carbon?",
-      "options": ["Oceans", "Deserts", "Grasslands", "Tundra"],
-      "answer": "Oceans"
-    },
-
-    {
-      "week": 12,
-      "question": "Biomagnification refers to",
-      "options": ["increase in concentration of pollutants along the food chain", "recycling of nutrients in ecosystem", "loss of energy in food chain", "population increase of predators"],
-      "answer": "increase in concentration of pollutants along the food chain"
+      "question": "Which of these is correct?",
+      "options": ["R + G = M + F", "R + M = G + F", "R + F = M + G", "R + G + M + F = 0"],
+      "answer": "R + G = M + F"
     },
     {
       "week": 12,
-      "question": "Which of these pollutants is most commonly associated with biomagnification?",
-      "options": ["DDT and Mercury", "CO2 and CH4", "NOx and SO2", "Plastic microbeads"],
-      "answer": "DDT and Mercury"
+      "question": "Consider the food chain: Grass → Grasshopper → Frog → Snake → Hawk. As we move up the food chain,",
+      "options": ["available energy decreases", "available energy increases", "available energy remains same", "available energy is zero everywhere"],
+      "answer": "available energy decreases"
     },
     {
       "week": 12,
-      "question": "Eutrophication is caused by",
-      "options": ["excess nutrients, especially nitrogen and phosphorus", "deforestation", "overgrazing", "invasive species"],
-      "answer": "excess nutrients, especially nitrogen and phosphorus"
+      "question": "The government came up with a regulation that incandescent bulbs be replaced by LED bulbs, so that electricity consumption and release of carbon dioxide from power plants is reduced. In the context of climate change, such an action would be called",
+      "options": ["adaptation", "mitigation", "deceleration"],
+      "answer": "mitigation"
     },
     {
       "week": 12,
-      "question": "Which of these is a consequence of eutrophication?",
-      "options": ["Algal blooms", "Increased biodiversity", "Soil enrichment", "Desertification"],
-      "answer": "Algal blooms"
+      "question": "The hierarchical system was given by",
+      "options": ["Simon", "Watson", "Hutchinson", "Humboldt"],
+      "answer": "Simon"
     },
     {
       "week": 12,
-      "question": "Which of these is the largest contributor to global warming?",
-      "options": ["CO2", "O2", "N2", "H2O"],
-      "answer": "CO2"
+      "question": "Captive breeding is an example of",
+      "options": ["in-situ conservation", "ex-situ conservation", "in-situ preservation", "ex-situ preservation"],
+      "answer": "ex-situ conservation"
     },
     {
       "week": 12,
-      "question": "Which greenhouse gas is more potent but less abundant than CO2?",
-      "options": ["Methane (CH4)", "Nitrogen (N2)", "Oxygen (O2)", "Hydrogen (H2)"],
-      "answer": "Methane (CH4)"
+      "question": "The climax near Tindni village is being controlled by disturbance by cattle. This is an example of",
+      "options": ["climatic climax", "edaphic climax", "disclimax", "catastrophic climax"],
+      "answer": "disclimax"
     },
     {
       "week": 12,
-      "question": "Ozone depletion primarily occurs due to",
-      "options": ["CFCs", "CO2", "Methane", "Nitrous oxide"],
-      "answer": "CFCs"
+      "question": "The demographic transition sees a society move from",
+      "options": [
+        "high birth rate, low death rate to low birth rate, low death rate",
+        "low birth rate, high death rate to low birth rate, low death rate",
+        "high birth rate, high death rate to low birth rate, low death rate",
+        "high birth rate, high death rate to low birth rate, high death rate"
+      ],
+      "answer": "high birth rate, high death rate to low birth rate, low death rate"
     },
     {
       "week": 12,
-      "question": "Which of these is an effect of acid rain?",
-      "options": ["Soil acidification", "Increase in fish population", "Increase in crop yield", "Ozone layer repair"],
-      "answer": "Soil acidification"
+      "question": "The logistic growth equation, when plotted, appears",
+      "options": ["I shaped", "J shaped", "S shaped", "O shaped"],
+      "answer": "S shaped"
     },
     {
       "week": 12,
-      "question": "Sustainable development aims to",
-      "options": ["meet present needs without compromising future generations", "maximize industrial output", "eliminate all human activity in forests", "increase population growth"],
-      "answer": "meet present needs without compromising future generations"
+      "question": "Hamilton's rule can be stated as",
+      "options": ["rB < C", "rB > C", "rB = C", "rB + C = 0"],
+      "answer": "rB > C"
     },
     {
       "week": 12,
-      "question": "Which of these international agreements focuses on biodiversity conservation?",
-      "options": ["Convention on Biological Diversity (CBD)", "Kyoto Protocol", "Montreal Protocol", "Paris Agreement"],
-      "answer": "Convention on Biological Diversity (CBD)"
+      "question": "Which of these is not a characteristic of fitness?",
+      "options": ["Fitness is environment-specific.", "Fitness is species-specific.", "Higher reproductive rate means higher fitness.", "Fitness should be measured across several generations."],
+      "answer": "Higher reproductive rate means higher fitness."
+    },
+    {
+      "week": 12,
+      "question": "\"Quick movement over large distances, often across unsuitable terrain\" is a description of",
+      "options": ["diffusion", "secular dispersal", "jump dispersal", "drifting"],
+      "answer": "jump dispersal"
     }
   ]
 }
-
 
